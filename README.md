@@ -2,7 +2,7 @@
 
 
 
-#NESTED FUNCTION IF WE DONT HAVE DEFINIED CHILDS LIKE TREE
+## NESTED FUNCTION IF WE DONT HAVE DEFINIED CHILDS LIKE TREE
 ```php
 function nested2table($array, $level = 0) {
     /* echo "<pre>";print_r($array);
@@ -31,7 +31,7 @@ function nested2table($array, $level = 0) {
 ```
 
 
-# DATE FORMATE CHANGE FROM 2018/10/04 TO 2018-10-04
+## DATE FORMATE CHANGE FROM 2018/10/04 TO 2018-10-04
 ```php
 function date_yyyy_mm_dd($var = '') {
     $date = str_replace('/', '-', $var);
@@ -40,7 +40,7 @@ function date_yyyy_mm_dd($var = '') {
 
 ```
 
-#GET NUMBER OF DAYS BETWEEN TWO DATES EX: 2018-09-10, 2018-10-02 $cond_ar will be day ids like 1= monday
+## GET NUMBER OF DAYS BETWEEN TWO DATES EX: 2018-09-10, 2018-10-02 $cond_ar will be day ids like 1= monday
 ```php
 function weekly_array_exists($from = '', $to = '', $cond_ar = []) {
    
@@ -64,7 +64,7 @@ function weekly_array_exists($from = '', $to = '', $cond_ar = []) {
     return $return_ar;
 }
 ```
-#GET NUMBER OF DAYS BETWEEN TWO DATES EX: 2018-09-10, 2018-10-02
+## GET NUMBER OF DAYS BETWEEN TWO DATES EX: 2018-09-10, 2018-10-02
 ```php
 function get_days_array_between_days($from = '', $to = '') {
    
@@ -83,7 +83,7 @@ function get_days_array_between_days($from = '', $to = '') {
     return $ar_return;
 }
 ```
-#TIME DIFFERENCE IN MINUTES
+## TIME DIFFERENCE IN MINUTES
 ```php
 function timedifference_in_minutes($start_time, $end_time,$para="") {
     /*$first_date = new DateTime("2012-11-30 " . $start_time);
@@ -126,7 +126,7 @@ function timedifference_in_minutes($start_time, $end_time,$para="") {
    
 }
 ```
-# Draw PHP CALENDAR BY JUST PASSING START AND END DATE
+## Draw PHP CALENDAR BY JUST PASSING START AND END DATE
 ```php
 function drawcalendar_onschedule($start_date, $end_date) {
     $weekdays = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
