@@ -3,6 +3,7 @@
 
 
 #NESTED FUNCTION IF WE DONT HAVE DEFINIED CHILDS LIKE TREE
+```php
 function nested2table($array, $level = 0) {
     /* echo "<pre>";print_r($array);
       echo "</pre>";exit(); */
@@ -27,19 +28,20 @@ function nested2table($array, $level = 0) {
 
     return implode($result);
 }
-
+```
 
 
 # DATE FORMATE CHANGE FROM 2018/10/04 TO 2018-10-04
+```php
 function date_yyyy_mm_dd($var = '') {
     $date = str_replace('/', '-', $var);
     return date('Y-m-d', strtotime($date));
 }
 
-
+```
 
 #GET NUMBER OF DAYS BETWEEN TWO DATES EX: 2018-09-10, 2018-10-02 $cond_ar will be day ids like 1= monday
-
+```php
 function weekly_array_exists($from = '', $to = '', $cond_ar = []) {
    
     $from = strtotime($from);
@@ -61,9 +63,9 @@ function weekly_array_exists($from = '', $to = '', $cond_ar = []) {
   
     return $return_ar;
 }
-
+```
 #GET NUMBER OF DAYS BETWEEN TWO DATES EX: 2018-09-10, 2018-10-02
-
+```php
 function get_days_array_between_days($from = '', $to = '') {
    
     $from = strtotime($from);
@@ -80,9 +82,9 @@ function get_days_array_between_days($from = '', $to = '') {
       }
     return $ar_return;
 }
-
+```
 #TIME DIFFERENCE IN MINUTES
-
+```php
 function timedifference_in_minutes($start_time, $end_time,$para="") {
     /*$first_date = new DateTime("2012-11-30 " . $start_time);
     $second_date = new DateTime("2012-12-21 " . $end_time);
@@ -123,8 +125,9 @@ function timedifference_in_minutes($start_time, $end_time,$para="") {
     return ($counter*60 + $minutes);
    
 }
-
+```
 # Draw PHP CALENDAR BY JUST PASSING START AND END DATE
+```php
 function drawcalendar_onschedule($start_date, $end_date) {
     $weekdays = array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat');
     $daysss = '';
@@ -161,9 +164,9 @@ function drawcalendar_onschedule($start_date, $end_date) {
     }
     return $returnStr;
 }
+```
 
-
-
+```php
 function hours_format($value=''){
     if ($value !='') {
         return date('g:i A',strtotime($value));
@@ -205,3 +208,4 @@ function time_elapsed_string($ptime)
         }
     }
 }
+```
